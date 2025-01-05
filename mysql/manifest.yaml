@@ -49,15 +49,16 @@ metadata:
     tier: db
     project: roboshop
 spec:
-   clusterIP: None
-   selector:
+  ClusterIP: None
+  selector: 
     app: mysql
     tier: db
     project: roboshop
   ports:
-  - port: 3306
-    protocol: TCP
-    targetPort: 3306
+    - name: mysql-port
+      protocol: TCP
+      port: 3306
+      targetPort: 3306  
 ---
 apiVersion: v1
 kind: ConfigMap
