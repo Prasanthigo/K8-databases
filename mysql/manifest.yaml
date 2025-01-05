@@ -49,7 +49,7 @@ metadata:
     tier: db
     project: roboshop
 spec:
-  ClusterIP: None
+  clusterIP: None
   selector: 
     app: mysql
     tier: db
