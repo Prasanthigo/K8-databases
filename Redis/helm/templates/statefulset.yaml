@@ -31,5 +31,5 @@ spec:
       volumes:
       - name: redis
         persistentVolumeClaim:
-            ClaimName: ebs-dynamic-pvc
+            ClaimName: ebs-redis-pvc 
  
